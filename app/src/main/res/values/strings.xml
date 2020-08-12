@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chumbak</string>
+    <string name="my_notes">My Notes</string>
+    <string name="search_notes">Search Notes</string>
+    <string name="title">Title</string>
+    <string name="note_subtitle">Subtitle</string>
+    <string name="start_typing">Start typing..</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="pick_color">Pick Color</string>
+</resources>
