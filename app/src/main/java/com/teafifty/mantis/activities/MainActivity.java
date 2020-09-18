@@ -1,4 +1,4 @@
-package com.teafifty.chumbak.activities;
+package com.teafifty.mantis.activities;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,10 +12,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.teafifty.chumbak.R;
-import com.teafifty.chumbak.adapters.NotesAdapter;
-import com.teafifty.chumbak.database.NotesDatabase;
-import com.teafifty.chumbak.entities.Note;
+import com.teafifty.mantis.R;
+import com.teafifty.mantis.adapters.NotesAdapter;
+import com.teafifty.mantis.database.NotesDatabase;
+import com.teafifty.mantis.entities.Note;
 
 import java.util.ArrayList;
 import java.util.List;

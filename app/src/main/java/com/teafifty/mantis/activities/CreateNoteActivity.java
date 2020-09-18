@@ -1,4 +1,4 @@
-package com.teafifty.chumbak.activities;
+package com.teafifty.mantis.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,9 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.teafifty.chumbak.R;
-import com.teafifty.chumbak.database.NotesDatabase;
-import com.teafifty.chumbak.entities.Note;
+import com.teafifty.mantis.R;
+import com.teafifty.mantis.database.NotesDatabase;
+import com.teafifty.mantis.entities.Note;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.text.SimpleDateFormat;

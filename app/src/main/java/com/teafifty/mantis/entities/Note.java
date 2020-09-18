@@ -1,4 +1,4 @@
-package com.teafifty.chumbak.entities;
+package com.teafifty.mantis.entities;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

@@ -1,4 +1,4 @@
-package com.teafifty.chumbak.database;
+package com.teafifty.mantis.database;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.teafifty.chumbak.dao.NoteDao;
-import com.teafifty.chumbak.entities.Note;
+import com.teafifty.mantis.dao.NoteDao;
+import com.teafifty.mantis.entities.Note;
 
 @Database(entities = Note.class, version = 1, exportSchema = false)
 public abstract class NotesDatabase extends RoomDatabase {

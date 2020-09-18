@@ -1,4 +1,4 @@
-package com.teafifty.chumbak.adapters;
+package com.teafifty.mantis.adapters;
 
 
 import android.graphics.Color;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.teafifty.chumbak.R;
-import com.teafifty.chumbak.entities.Note;
+import com.teafifty.mantis.R;
+import com.teafifty.mantis.entities.Note;
 
 import java.util.List;
 

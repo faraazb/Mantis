@@ -1,4 +1,4 @@
-package com.teafifty.chumbak;
+package com.teafifty.mantis;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.teafifty.chumbak.dao;
+package com.teafifty.mantis.dao;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import com.teafifty.chumbak.entities.Note;
+import com.teafifty.mantis.entities.Note;
 
 import java.util.List;
 
