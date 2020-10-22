@@ -124,6 +124,21 @@ public class CreateNoteActivity extends AppCompatActivity {
             }
         });
 
+        if(getIntent().getBooleanExtra("isFromQuickActions", false)) {
+            String type = getIntent().getStringExtra("quickActionType");
+            if(type != null) {
+                if(type.equals("image")) {
+                    selectedImagePath = getIntent().getStringExtra("imagePath");
+                    imageNote.setImageBitmap(BitmapFactory.decodeFile(selectedImagePath));
+                    imageNote.setVisibility(View.VISIBLE);
+                    findViewById(R.id.imageRemoveImage).setVisibility(View.VISIBLE);
+                } else if(type.equals("URL")) {
+                    textWebURL.setText(getIntent().getStringExtra("URL"));
+                    layoutWebURL.setVisibility(View.VISIBLE);
+                }
+            }
+        }
+
         initMiscellaneous();
         setSubtitleIndicatorColor();
     }
@@ -435,20 +450,20 @@ public class CreateNoteActivity extends AppCompatActivity {
         }
     }
 
-    private String getPathFromUri(Uri contentUri) {
-        String filePath;
-        Cursor cursor = getContentResolver()
-                .query(contentUri, null, null, null, null);
-        if (cursor == null) {
-            filePath = contentUri.getPath();
-        } else {
-            cursor.moveToFirst();
-            int index = cursor.getColumnIndex("_data");
-            filePath = cursor.getString(index);
-            cursor.close();
+        private String getPathFromUri(Uri contentUri) {
+            String filePath;
+            Cursor cursor = getContentResolver()
+                    .query(contentUri, null, null, null, null);
+            if (cursor == null) {
+                filePath = contentUri.getPath();
+            } else {
+                cursor.moveToFirst();
+                int index = cursor.getColumnIndex("_data");
+                filePath = cursor.getString(index);
+                cursor.close();
+            }
+            return filePath;
         }
-        return filePath;
-    }
 
     private void showAddURLDialog() {
         if (dialogAddURL == null) {
